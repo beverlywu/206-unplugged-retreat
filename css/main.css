@@ -14,7 +14,6 @@
 html {
   color: #222;
   font-size: 16px;
-  line-height: 1.4;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -95,8 +94,8 @@ h1,
 h2, 
 h3, 
 h4 {
-	font-family: 'Convergence', sans-serif;
-	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
 
 h1 {
@@ -109,6 +108,7 @@ h2 {
 
 p {
 	font-size: 0.8em;
+	line-height: 1.4em;
 }
 
 /***** BASE HEADER - FOOTER STYLES *****/
@@ -136,7 +136,6 @@ header .logo {
 	width: 60vw;
 }
 header .logo img{
-	/*border: 1px solid #00ff00;*/
 	max-width: 100%;
 	padding: 2vh 0;
 	
@@ -171,7 +170,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-	color: #fff;
+	color: #E2E3ED;
 	text-decoration: none;
 	
 }
@@ -216,6 +215,11 @@ footer .social-icons ul li {
 	list-style-type: none;
 }
 
+footer .social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .footer-content {
 	color: #fff;
 	text-align: center;
@@ -228,6 +232,7 @@ footer .social-icons ul li {
 
 .copyright {
 	color: #fff;
+	
 }
 
 
@@ -240,7 +245,6 @@ footer .social-icons ul li {
 }
 
 .hero-area h1 {
-	font-size: 2em;
 	line-height: 1.2em;
 	color: #E2E3ED;
 	
@@ -258,7 +262,7 @@ aside {
 }
 
 .form {
-	padding: 0 0 8vh 0;
+	padding: 0 0 50px 0;
 	
 }
 
@@ -319,6 +323,10 @@ aside {
 .contact-section {
 	color: #fff;
 
+}
+
+address p {
+	line-height: 1.5rem;
 }
 
 .faq {
@@ -424,20 +432,137 @@ aside {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/***** TABLET STYLES *****/
+@media only screen and (min-width: 768px) {
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+	h1 {
+		font-size: 3rem;
+	}
+	
+	h2 {
+		font-size: 2.25rem;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+	
+	h4 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+	
+	.content-wrapper {
+		width: 85vw;
+	}
+		
+	header .content-wrapper {
+		flex-flow: row ;	
+	}
+	header .logo {
+		width: 60vw;
+	}
+	header .logo img {
+		padding: 3vh 0;
+	}
+
+	.header-divider {
+		border: none;
+	}
+	
+	header nav ul li {
+		font-weight: 700;
+	}
+	
+	aside .content-wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 2vh 0;
+	}
+	
+	aside h3 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+	aside p {
+		margin: 0 ;
+	}
+	
+	aside .form-description {
+		width: 38vw;
+		display: flex;
+		align-items: flex-start;
+		flex-flow: column;
+		justify-content: flex-start;
+		padding: 0;
+	}
+	
+	aside .form {
+		width: 35vw;
+		display: flex;
+		flex-flow: column;
+		align-items: stretch;
+		justify-content: flex-start;
+	}
+	
+	.features-items {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 55vw;
+	}
+	
+	.features-items article {
+		width: 20vw;
+	}
+	
+	.reviews {
+		padding: 60px 0 70px 0;
+	}
+	
+	.reviews .content-wrapper {
+	}
+	
+	footer {
+	}
+	
+	footer .content-wrapper {
+		justify-content: flex-start;
+	}
+	.footer-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 65vw;
+		padding: 60px 0 70px 0;
+		
+	}
+	
+	footer .contact {
+	}
+	
+	footer .social {
+		margin: 0;
+	}
+	
+	footer .social-icons ul {
+		display: flex;
+		width: 30vw;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0;
+	}
+/***** DESKTOP STYLES *****/
+@media only screen and (min-width: 1200px) {
+	
 }
 
 /* ==========================================================================
