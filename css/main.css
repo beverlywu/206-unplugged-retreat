@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -86,106 +87,212 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+	width: 90vw;
+}
 
-/*----------------- BASE HEADER - FOOTER STYLES --------------------------*/
+h1, 
+h2, 
+h3, 
+h4 {
+	font-family: 'Convergence', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 2.25em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+p {
+	font-size: 0.8em;
+}
+
+/***** BASE HEADER - FOOTER STYLES *****/
 
 header, 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	background: #202322;
 }
 
 /***** HEADER STYLES *****/
 
 header {
-	
+	display: flex;
+	justify-content: center;
 }
 
 header .content-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column;	
+}
+
+header .logo {
+	width: 60vw;
+}
+header .logo img{
+	/*border: 1px solid #00ff00;*/
+	max-width: 100%;
+	padding: 2vh 0;
 	
 }
 
 .header-divider {
-	
+	border: 1px solid #3A3A3A;
+	width: 100vw;
 }
 
 header nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	
+	width: 44vw;
+	padding: 2vh 0;
 	
 }
 
 header nav ul {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-flow: row wrap;
-	
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;	
 }
 
 header nav ul li {
+	font-size: 1em;
+	text-transform: uppercase;
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	
 	
 }
 
-/***** FOOTER STYLES *****/
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	
+}
 
-footer .social-icons {
+/***** FOOTER STYLES ****/
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: column;
+	
+}
+footer .content-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: column;	
+}
+
+footer .contact {
+	
+}
+
+footer p {
+	font-style: normal;
+	
+}
+
+footer .social {
+	margin: 2vh 0 0 0;
+}
+
+footer .social-icons ul {
+	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 50vw;
+	padding: 0;
+}
+
+footer .social-icons ul li {
+	list-style-type: none;
+}
+
+.footer-content {
+	color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	padding: 5vh;
+}
+
+.copyright {
+	color: #fff;
 }
 
 
-/***** MOBILE STYLES *****/
+/***** MOBILE STYLES ****/
 
+	
 .hero-area {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
 }
 
-aside {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-}
-
-.form-description {
+.hero-area h1 {
+	font-size: 2em;
+	line-height: 1.2em;
+	color: #E2E3ED;
 	
 }
 
+aside {
+	background: #527158;
+	display: flex;
+	justify-content: center;
+	color: #E2E3ED;
+}
+
+.form-description {
+	padding: 2vh 0 0 0;
+}
+
 .form {
+	padding: 0 0 8vh 0;
 	
 }
 
 .features {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	
 }
+
+.features h2 {
+}
+
+.features .content-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	padding: 5vh 0 6vh 0;
+}
+
+
+.features-items article {
+	margin: 5vh 0;
+}
+
 
 .features-items {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column;
+	width: 55vw;
+	text-align: center;
 }
 
-article {
-	
+.features-items-description {
 }
 
 .fontawesome-icon {
@@ -199,37 +306,27 @@ article {
 .reviews {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	background: #2A423A;
+	color: #E2E3ED;
+	padding: 5vh 0;
+	
 }
 
 .mission {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+
 }
 
 .contact-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	color: #fff;
 
 }
 
 .faq {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+
 }
 
 .faq .content-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	
 }
 
 
