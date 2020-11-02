@@ -106,6 +106,14 @@ h2 {
 	font-size: 1.8em;
 }
 
+h3 {
+	font-size: 1.13em;
+}
+
+h4 {
+	font-size: 0.88em;
+}
+
 p {
 	font-size: 0.8em;
 	line-height: 1.4em;
@@ -134,9 +142,13 @@ header .content-wrapper {
 
 header .logo {
 	width: 60vw;
+	display: flex;
+	justify-content: center;
+
 }
 header .logo img{
 	max-width: 100%;
+	max-height: 40px;
 	padding: 2vh 0;
 	
 }
@@ -147,7 +159,7 @@ header .logo img{
 }
 
 header nav {
-	width: 44vw;
+	width: 160px;
 	padding: 2vh 0;
 	
 }
@@ -283,11 +295,9 @@ aside {
 	padding: 5vh 0 6vh 0;
 }
 
-
 .features-items article {
 	margin: 5vh 0;
 }
-
 
 .features-items {
 	display: flex;
@@ -317,36 +327,36 @@ aside {
 }
 
 .mission {
-
+	display: flex;
+	justify-content: center;
+	background: #527158;
+	color: #E2E3ED;
+	padding: 40px 0;
 }
 
 .contact-section {
-	color: #fff;
+	color: #E2E3ED;
+	background: #2A423A;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
 
+.contact-content {
+	font-style: normal;
 }
 
 address p {
-	line-height: 1.5rem;
+	line-height: 1.2rem;
 }
 
 .faq {
-
+	background: #527158;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	color: #E2E3ED;
 }
-
-.faq .content-wrapper {
-	
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -440,24 +450,6 @@ address p {
 /***** TABLET STYLES *****/
 @media only screen and (min-width: 768px) {
 
-	h1 {
-		font-size: 3rem;
-	}
-	
-	h2 {
-		font-size: 2.25rem;
-	}
-	
-	h3 {
-		font-size: 1.5em;
-		font-weight: 400;
-	}
-	
-	h4 {
-		font-size: 1.5em;
-		font-weight: 400;
-	}
-	
 	.content-wrapper {
 		width: 85vw;
 	}
@@ -469,65 +461,19 @@ address p {
 		width: 60vw;
 	}
 	header .logo img {
-		padding: 3vh 0;
+		padding: 30px 0;
 	}
 
 	.header-divider {
 		border: none;
 	}
 	
+	header nav {
+		width: 300px;
+	}
+	
 	header nav ul li {
 		font-weight: 700;
-	}
-	
-	aside .content-wrapper {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 2vh 0;
-	}
-	
-	aside h3 {
-		font-size: 1.5em;
-		font-weight: 400;
-	}
-	aside p {
-		margin: 0 ;
-	}
-	
-	aside .form-description {
-		width: 38vw;
-		display: flex;
-		align-items: flex-start;
-		flex-flow: column;
-		justify-content: flex-start;
-		padding: 0;
-	}
-	
-	aside .form {
-		width: 35vw;
-		display: flex;
-		flex-flow: column;
-		align-items: stretch;
-		justify-content: flex-start;
-	}
-	
-	.features-items {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		width: 55vw;
-	}
-	
-	.features-items article {
-		width: 20vw;
-	}
-	
-	.reviews {
-		padding: 60px 0 70px 0;
-	}
-	
-	.reviews .content-wrapper {
 	}
 	
 	footer {
@@ -560,6 +506,86 @@ address p {
 		justify-content: space-between;
 		padding: 0;
 	}
+	
+	aside .content-wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 2vh 0;
+	}
+	
+	aside h3 {
+		font-size: 1.5em;
+	}
+	aside p {
+		margin: 0 ;
+	}
+	
+	aside .form-description {
+		width: 38vw;
+		display: flex;
+		align-items: flex-start;
+		flex-flow: column;
+		justify-content: flex-start;
+		padding: 0;
+	}
+	
+	aside .form {
+		width: 35vw;
+		display: flex;
+		flex-flow: column;
+		align-items: stretch;
+		justify-content: flex-start;
+	}
+	
+	.features-items {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 55vw;
+	}
+	
+	.features-items article {
+		flex-basis: 20vw;
+	}
+	
+	.reviews {
+		padding: 60px 0 70px 0;
+	}
+	
+	.reviews .content-wrapper {
+	}
+	
+	.mission {
+		padding: 100px 0;
+	}
+	
+	.contact-section {
+		padding: 100px 0;
+	}
+	
+	.faq {
+		padding: 100px 0;
+	}
+	.faq-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	
+	.faq-content article {
+		display: flex;
+		flex-flow: column;
+		flex-basis: 38vw;
+		margin: 14px 0
+	}
+	
+	.faq-content h3 {
+		font-size: 0.88em;
+		margin: 0;
+	}
+	
+
 /***** DESKTOP STYLES *****/
 @media only screen and (min-width: 1200px) {
 	
