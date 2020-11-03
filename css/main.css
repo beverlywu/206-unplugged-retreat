@@ -125,6 +125,10 @@ p {
 	line-height: 1.4em;
 }
 
+
+
+
+
 .content-wrapper {
 	width: 90vw;
 }
@@ -187,9 +191,11 @@ header nav ul li {
 	text-transform: uppercase;
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	
 	
 }
+
 
 header nav ul li a {
 	color: #E2E3ED;
@@ -264,7 +270,9 @@ footer .social-icons a {
 .hero-area {
 	display: flex;
 	justify-content: center;
-	background: url('../img/forest-bridge.jpg');
+	background: url('../img/forest-bridge.jpg') center no-repeat #333;
+	background-size: cover;
+	height: 500px;
 }
 
 .hero-area h1 {
@@ -488,6 +496,9 @@ address p {
 		width: 85vw;
 	}
 		
+	h1 {
+		font-size: 3em;
+	}
 	h3 {
 		font-size: 1.5em;
 	}
@@ -543,6 +554,10 @@ address p {
 		flex-flow: row wrap;
 		justify-content: space-between;
 		padding: 0;
+	}
+	
+	.hero-area {
+		height: 600px;
 	}
 	
 	aside .content-wrapper {
