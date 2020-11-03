@@ -264,6 +264,7 @@ footer .social-icons a {
 .hero-area {
 	display: flex;
 	justify-content: center;
+	background: url('../img/forest-bridge.jpg');
 }
 
 .hero-area h1 {
