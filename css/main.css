@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -86,8 +80,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.content-wrapper {
-	width: 90vw;
+
+html {
+  font-size: 16px;
+}
+
+body {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+a {
+     color: #e2e3ed;
+     text-decoration: none;
 }
 
 h1, 
@@ -118,6 +124,9 @@ p {
 	font-size: 0.8em;
 	line-height: 1.4em;
 }
+
+.content-wrapper {
+	width: 90vw;
 
 /***** BASE HEADER - FOOTER STYLES *****/
 
@@ -178,12 +187,6 @@ header nav ul li {
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
 	
-	
-}
-
-header nav ul li a {
-	color: #E2E3ED;
-	text-decoration: none;
 	
 }
 
@@ -663,7 +666,7 @@ address p {
 	}
 	
 	.contact-section h2 {
-		font-size: 3em;
+		font-size: 3e;
 	}
 	.contact-content {
 		display: flex;
