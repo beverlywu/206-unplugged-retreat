@@ -103,7 +103,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 1.88em;
 }
 
 h3 {
@@ -454,6 +454,10 @@ address p {
 		width: 85vw;
 	}
 		
+	h3 {
+		font-size: 1.5em;
+	}
+	
 	header .content-wrapper {
 		flex-flow: row ;	
 	}
@@ -514,15 +518,12 @@ address p {
 		padding: 2vh 0;
 	}
 	
-	aside h3 {
-		font-size: 1.5em;
-	}
 	aside p {
 		margin: 0 ;
 	}
 	
 	aside .form-description {
-		width: 38vw;
+		width: 30vw;
 		display: flex;
 		align-items: flex-start;
 		flex-flow: column;
@@ -587,10 +588,96 @@ address p {
 	
 
 /***** DESKTOP STYLES *****/
+
 @media only screen and (min-width: 1200px) {
 	
-}
+	.content-wrapper {
+		width: 80vw;
+	}
+	
+	h1 {
+		font-size: 3.75em;
+	}
+	
+	h2 {
+		font-size: 2.25em;
+	}
+	
+	h3 {
+		font-size: 1.88em;
+	}
+	
+	p {
+		font-size: 1.13em;
+		font-weight: 300;
+	}
+	
+	header .logo img {
+		max-height: 50px;
+	}
+	
+	header nav ul li {
+		font-size: 1.13em;
+	}
 
+	.headline {
+		width: 60vw;
+	}
+	
+	aside .content-wrapper {
+		justify-content: space-around;
+		padding: 30px 0 50px 0;
+	}
+
+	aside .form-description {
+		width: 28vw;
+	}
+
+	aside .form {
+		width: 25vw;
+	}
+	
+	.features-items {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 70vw;
+	}
+	
+	.features-items article {
+		flex-basis: 18vw;
+	}
+	
+	.mission h2 {
+		font-size: 3em;
+	}
+	
+	.mission-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	
+	.mission-content p {
+		width: 45%;
+	}
+	
+	.contact-section h2 {
+		font-size: 3em;
+	}
+	.contact-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	
+
+	
+	.contact-content div {
+		width: 45%;
+	}
+}
+	
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
