@@ -197,15 +197,11 @@ header nav ul li {
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	
-	
 }
-
 
 header nav ul li a {
 	color: #E2E3ED;
 	text-decoration: none;
-	
 }
 
 /***** FOOTER STYLES ****/
@@ -376,12 +372,32 @@ input[type=button] {
 	
 }
 
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
 .mission {
 	display: flex;
 	justify-content: center;
 	background: #527158;
 	color: #E2E3ED;
 	padding: 40px 0;
+}
+
+.map figure {
+	width: 100%;
+	height: 0;
+	padding-bottom: 125%;
+	overflow: hidden;
+	position: relative;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .contact-section {
@@ -640,6 +656,8 @@ address p {
 		padding: 100px 0;
 	}
 	
+	
+	
 	.contact-section {
 		padding: 100px 0;
 	}
@@ -697,6 +715,13 @@ address p {
 	header nav ul li {
 		font-size: 1.13em;
 	}
+	
+	.hero-area {
+		background: url('../img/forest-bridge.jpg') center no-repeat #333;
+		background-size: cover;
+	}
+		
+
 
 	.headline {
 		width: 60vw;
