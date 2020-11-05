@@ -81,6 +81,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ===========================
+		BASE STYLES
+=========================== */
 html {
   font-size: 16px;
 }
@@ -121,7 +124,7 @@ h4 {
 }
 
 p {
-	font-size: 0.8em;
+	font-size: 0.88em;
 	line-height: 1.4em;
 }
 
@@ -133,19 +136,22 @@ figure {
 	margin: 0;
 }
 
-
 .content-wrapper {
 	width: 90vw;
 }
 
-/***** BASE HEADER - FOOTER STYLES *****/
+/* ===========================
+BASE HEADER & FOOTER STYLES
+=========================== */
 
 header, 
 footer {
 	background: #202322;
 }
 
-/***** HEADER STYLES *****/
+/* ===========================
+		HEADER STYLES
+=========================== */
 
 header {
 	display: flex;
@@ -163,13 +169,11 @@ header .logo {
 	width: 60vw;
 	display: flex;
 	justify-content: center;
-
 }
+
 header .logo img{
 	padding: 2vh 0;
 	max-width: 220px;
-	
-	
 }
 
 .header-divider {
@@ -180,7 +184,6 @@ header .logo img{
 header nav {
 	width: 160px;
 	padding: 2vh 0;
-	
 }
 
 header nav ul {
@@ -204,14 +207,16 @@ header nav ul li a {
 	text-decoration: none;
 }
 
-/***** FOOTER STYLES ****/
+/* ===========================
+		FOOTER STYLES
+=========================== */
 
 footer {
 	display: flex;
 	justify-content: center;
 	align-items: column;
-	
 }
+
 footer .content-wrapper {
 	display: flex;
 	justify-content: center;
@@ -219,13 +224,8 @@ footer .content-wrapper {
 	flex-flow: column;	
 }
 
-footer .contact {
-	
-}
-
 footer p {
 	font-style: normal;
-	
 }
 
 footer .social {
@@ -260,14 +260,21 @@ footer .social-icons a {
 }
 
 .copyright {
-	color: #fff;
-	
+	color: #fff;	
 }
 
 
-/***** MOBILE STYLES ****/
+/* ==========================================================================
+   								MOBILE STYLES
+   ========================================================================== */
 
-	
+
+/* ===========================
+  	 		HOME PAGE
+   =========================== */
+
+/***** HERO AREA *****/
+
 .hero-area {
 	display: flex;
 	justify-content: center;
@@ -279,8 +286,9 @@ footer .social-icons a {
 .hero-area h1 {
 	line-height: 1.2em;
 	color: #E2E3ED;
-	
 }
+
+/***** NEWSLETTER SUBSCRIBE *****/
 
 aside {
 	background: #527158;
@@ -295,7 +303,6 @@ aside .form-description {
 
 aside .form {
 	padding: 15px 0 50px 0;
-	
 }
 
 input[type=text] {
@@ -320,15 +327,13 @@ input[type=button] {
 	font-weight: 500;
 }
 
+/***** FEATURES SECTION *****/
+
 .features {
 	display: flex;
 	justify-content: center;
 	background: url('../img/features-outdoors.jpg') center no-repeat #333;
 	background-size: cover;
-	
-}
-
-.features h2 {
 }
 
 .features .content-wrapper {
@@ -337,7 +342,6 @@ input[type=button] {
 	flex-flow: column;
 	align-items: center;
 	padding: 5vh 0 6vh 0;
-
 	color: #E2E3ED;
 }
 
@@ -348,20 +352,11 @@ input[type=button] {
 .features-items {
 	display: flex;
 	flex-flow: column;
-	width: 55vw;
+	width: 270px;
 	text-align: center;
 }
 
-.features-items-description {
-}
-
-.fontawesome-icon {
-	
-}
-
-.features-item-description {
-	
-}
+/***** REVIEWS SECTION *****/
 
 .reviews {
 	display: flex;
@@ -369,12 +364,13 @@ input[type=button] {
 	background: #2A423A;
 	color: #E2E3ED;
 	padding: 5vh 0;
-	
 }
 
-/* ==========================================================================
-   About Page
-   ========================================================================== */
+/* ===========================
+	  	 ABOUT PAGE
+=========================== */
+
+/***** MISSION SECTION *****/
 
 .mission {
 	display: flex;
@@ -384,10 +380,12 @@ input[type=button] {
 	padding: 40px 0;
 }
 
+/***** GOOGLE MAP *****/
+
 .map figure {
 	width: 100%;
 	height: 0;
-	padding-bottom: 125%;
+	padding-bottom: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -399,6 +397,8 @@ input[type=button] {
 	top: 0;
 	left: 0;
 }
+
+/***** CONTACT SECTION *****/
 
 .contact-section {
 	color: #E2E3ED;
@@ -416,19 +416,91 @@ address p {
 	line-height: 1.2rem;
 }
 
+/* ===========================
+   			FAQ PAGE
+=========================== */
+
 .faq {
 	background: #527158;
 	display: flex;
 	justify-content: center;
 	padding: 40px 0;
-	
+	color: #E2E3ED;
 }
 
-
-}
 /* ==========================================================================
-   Helper classes
+   								TABLET STYLES
    ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+/* ================================
+TABLET BASE, HEADER, FOOTER STYLES
+================================ */
+	
+	.content-wrapper {
+		width: 85vw;
+	}
+		
+	h1 {
+		font-size: 3em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	
+	header .content-wrapper {
+		flex-flow: row ;	
+	}
+	
+	header .logo {
+		width: 60vw;
+	}
+	header .logo img {
+		padding: 30px 0;
+	}
+
+	.header-divider {
+		border: none;
+	}
+	
+	header nav {
+		width: 300px;
+	}
+	
+	header nav ul li {
+		font-weight: 700;
+	}
+	
+	footer .content-wrapper {
+		justify-content: flex-start;
+	}
+	.footer-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 65vw;
+		padding: 60px 0 70px 0;
+	}
+	
+	footer .social {
+		margin: 0;
+	}
+	
+	footer .social-icons ul {
+		display: flex;
+		width: 30vw;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0;
+	}
+	
+
+	
+/* ================
+   Helper classes
+   ================ */
 
 /*
  * Hide visually and from screen readers
@@ -507,84 +579,17 @@ address p {
 .clearfix::after {
   clear: both;
 }
-
-/* ==========================================================================
-   Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-/***** TABLET STYLES *****/
-@media only screen and (min-width: 768px) {
-
-	.content-wrapper {
-		width: 85vw;
-	}
-		
-	h1 {
-		font-size: 3em;
-	}
-	h3 {
-		font-size: 1.5em;
-	}
+/* =============================
+	HOME PAGE - TABLET STYLES
+============================= */
 	
-	header .content-wrapper {
-		flex-flow: row ;	
-	}
-	
-	header .logo {
-		width: 60vw;
-	}
-	header .logo img {
-		padding: 30px 0;
-	}
-
-	.header-divider {
-		border: none;
-	}
-	
-	header nav {
-		width: 300px;
-	}
-	
-	header nav ul li {
-		font-weight: 700;
-	}
-	
-	footer {
-	}
-	
-	footer .content-wrapper {
-		justify-content: flex-start;
-	}
-	.footer-content {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		align-items: flex-start;
-		width: 65vw;
-		padding: 60px 0 70px 0;
-		
-	}
-	
-	footer .contact {
-	}
-	
-	footer .social {
-		margin: 0;
-	}
-	
-	footer .social-icons ul {
-		display: flex;
-		width: 30vw;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 0;
-	}
+	/***** HERO AREA *****/
 	
 	.hero-area {
 		height: 600px;
 	}
+	
+	/***** NEWSLETTER SUBSCRIBE *****/
 	
 	aside .content-wrapper {
 		display: flex;
@@ -613,8 +618,9 @@ address p {
 		align-items: stretch;
 		justify-content: flex-start;
 		padding: 0 0 50px 0;
-		
 	}
+	
+	/***** FEATURES SECTION *****/
 	
 	.features-items {
 		display: flex;
@@ -626,6 +632,8 @@ address p {
 	.features-items article {
 		flex-basis: 20vw;
 	}
+	
+	/***** REVIEWS SECTION *****/
 	
 	.reviews {
 		padding: 60px 0 70px 0;
@@ -652,15 +660,31 @@ address p {
 		width: 47%;
 	}
 	
+	/* ===========================
+	  ABOUT PAGE - TABLET STYLES
+	=========================== */
+	
+	/***** MISSION SECTION *****/
+	
 	.mission {
 		padding: 100px 0;
 	}
 	
+	/***** GOOGLE MAP *****/
 	
+	.map figure {
+		padding-bottom: 60%;
+	}
+	
+	/***** CONTACT SECTION *****/
 	
 	.contact-section {
 		padding: 100px 0;
 	}
+	
+	/* ===========================
+	    FAQ PAGE - TABLET STYLES
+	=========================== */
 	
 	.faq {
 		padding: 100px 0;
@@ -684,9 +708,15 @@ address p {
 	}
 	
 
-/***** DESKTOP STYLES *****/
+/* ==========================================================================
+   								DESKTOP STYLES
+   ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
+	
+	/* ===================================
+	BASE, HEADER, FOOTER - DESKTOP STYLES
+	=================================== */
 	
 	.content-wrapper {
 		width: 80vw;
@@ -716,16 +746,22 @@ address p {
 		font-size: 1.13em;
 	}
 	
+	/* ================================
+		HOME PAGE - DESKTOP STYLES
+	================================ */
+	
+	/***** HERO AREA *****/
+	
 	.hero-area {
 		background: url('../img/forest-bridge.jpg') center no-repeat #333;
 		background-size: cover;
 	}
-		
-
-
+	
 	.headline {
 		width: 60vw;
 	}
+	
+	/***** NEWSLETTER SUBSCRIBE *****/
 	
 	aside .content-wrapper {
 		justify-content: space-around;
@@ -740,6 +776,8 @@ address p {
 		width: 25vw;
 	}
 	
+	/***** FEATURES SECTION *****/
+	
 	.features-items {
 		display: flex;
 		flex-flow: row wrap;
@@ -750,6 +788,12 @@ address p {
 	.features-items article {
 		flex-basis: 18vw;
 	}
+	
+	/* ================================
+		ABOUT PAGE - DESKTOP STYLES
+	================================ */
+	
+	/***** MISSION SECTION *****/
 	
 	.mission h2 {
 		font-size: 3em;
@@ -765,6 +809,14 @@ address p {
 		width: 45%;
 	}
 	
+	/***** GOOGLE MAP *****/
+	
+	.map figure {
+		padding-bottom: 50%;
+	}
+	
+	/***** CONTACT SECTION *****/
+	
 	.contact-section h2 {
 		font-size: 3e;
 	}
@@ -774,13 +826,10 @@ address p {
 		justify-content: space-between;
 	}
 	
-
-	
 	.contact-content div {
 		width: 45%;
 	}
 }
-	
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
