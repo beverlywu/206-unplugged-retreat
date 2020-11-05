@@ -232,18 +232,25 @@ footer .social {
 	margin: 2vh 0 0 0;
 }
 
-footer .social-icons ul {
+footer .social-icons {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	width: 50vw;
+	width: 200px;
 	padding: 0;
 }
 
-footer .social-icons ul li {
-	list-style-type: none;
+footer .social-icons p {
+	font-size: 1.2em;
+	margin: 0;
+	background-color: #527158;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 footer .social-icons a {
 	color: #fff;
 	text-decoration: none;
